@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ShopStore from './stores/ShopStore';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App store={ShopStore} />
   </React.StrictMode>,
   document.getElementById('root')
 );
